@@ -3,7 +3,7 @@
 // @namespace    https://torn.com/
 // @version      1.0.0
 // @description  Shows the target's last action (relative time + status) on the attack page, pulled from the Torn API
-// @author       you
+// @author       Turt [2472641]
 // @match        https://www.torn.com/page.php?sid=attack*
 // @match        https://www.torn.com/loader2.php?sid=attack*
 // @match        https://www.torn.com/loader.php?sid=attack*
@@ -131,7 +131,7 @@
     const apiKey = getApiKey();
     const targetId = getTargetIdFromUrl();
 
-    if (!targetId) return; // not an attack page we recognize
+    if (!targetId) return; // attack page not recognised
 
     if (!apiKey) {
       const panel = buildPanel();
