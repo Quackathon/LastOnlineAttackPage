@@ -41,7 +41,3 @@ If you installed via the direct link above, Tampermonkey will automatically chec
 ## Privacy
 
 Your API key is stored only in your browser's userscript manager storage. The script makes a request directly from your browser to `api.torn.com` — no data passes through any third-party server.
-
-## License
-
-MIT
