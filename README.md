@@ -44,4 +44,4 @@ Your API key is stored only in your browser's userscript manager storage. The sc
 
 ## License
 
-MIT (or update to whatever license you prefer)
+MIT
