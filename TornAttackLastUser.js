@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Torn Attack Page - Last Action
 // @namespace    https://torn.com/
-// @version      1.0.0
+// @version      1.1.0
 // @description  Shows the target's last action (relative time + status) on the attack page, pulled from the Torn API
 // @author       Turt [2472641]
 // @match        https://www.torn.com/page.php?sid=attack*
@@ -12,6 +12,8 @@
 // @grant        GM_registerMenuCommand
 // @grant        GM_xmlhttpRequest
 // @connect      api.torn.com
+// @updateURL    https://raw.githubusercontent.com/Quackathon/LastOnlineAttackPage/main/TornAttackLastUser.js
+// @downloadURL  https://raw.githubusercontent.com/Quackathon/LastOnlineAttackPage/main/TornAttackLastUser.js
 // ==/UserScript==
 
 (function () {
@@ -131,7 +133,7 @@
     const apiKey = getApiKey();
     const targetId = getTargetIdFromUrl();
 
-    if (!targetId) return; // attack page not recognised
+    if (!targetId) return; // not an attack page we recognize
 
     if (!apiKey) {
       const panel = buildPanel();
